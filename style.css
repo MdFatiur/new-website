@@ -119,17 +119,34 @@ nav li {
     list-style: none;
     margin-right: 60px;
     border-radius: 5px;
+    padding: 2px 5px;
 
 }
 
-nav ul {
+nav>ul>li:hover>ul {
+    display: block;
+
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+}
+
+.dropdown li {
+    padding: 0 5px;
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+nav>ul {
     display: flex;
 
 }
 
 nav li:hover {
     background-color: rgb(188, 189, 190);
-    padding: 2px 15px;
+
 }
 
 nav li a {
